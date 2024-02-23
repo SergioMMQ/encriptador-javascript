@@ -1,0 +1,26 @@
+body{
+    background: #F3F5FC;
+    width: 940px;
+    margin: 20px auto;
+}
+
+div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo{
+    margin: 5%;
+}
+
+.escribir-mensaje{
+    margin: 0 5%;
+    padding: 25% 2%;
+}
+
+.mostrar-mensaje{
+    text-align: center;
+    background: white;
+    padding: 10% 2%;
+    border-radius: 50px;
+}
