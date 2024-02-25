@@ -1,6 +1,7 @@
 body{
     background: #F3F5FC;
-    width: 100%;
+    width: 1440px;
+    height: 1020px;
 
 }
 
@@ -19,27 +20,32 @@ section{
 }
 
 .escribir-mensaje{
-    margin: 0 5%;
     vertical-align: top;
     text-align: center;
-    background: white;
     width: 50%;
-    height: 944px;
-    border-radius: 32px;
+    height: 100%;
 }
 
 .texto{
-    margin: 45% 0 0 0;
+    margin: 165px 0 0 0;
+    width: 577px;
+    height: 48px;
 }
 
 .botones{
-    margin: 80% 0 5% 0;
+    margin: 620px 0 0 0;
 }
-
+.excalmacion{
+    display:inline-block;
+}
 .mostrar-mensaje{
     text-align: center;
-    background: white;
+    background: #FFFFFF;
     width: 30%;
     height: 944px;
     border-radius: 32px;
+}
+
+.muñeco{
+    margin: 300px 0 20px 0;
 }
