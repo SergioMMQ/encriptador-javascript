@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,20 +14,23 @@
         </section>
         <section class="escribir-mensaje">
             <div >
-                <input class="texto" type="text" name="texto" id="mensaje" placeholder="Ingresa el texto aqui">
+                <textarea class="texto" name="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
             </div>
-            <div class="botones"> 
-                <img src="imagenes/bi_exclamation-circle-fill.png" alt="excalamacion" class="excalamacion">
-                <p>Solo letras minúsculas y sin acentos</p>    
+                <img class="exclamacion" src="imagenes/bi_exclamation-circle-fill.png" alt="excalamacion" class="excalamacion">
+                <p class="parrafo-exclamacion">Solo letras minúsculas y sin acentos</p>    
+            <div class="botones">
                 <button type="submit">Encriptar</button>
                 <button type="reset">Desencriptar</button>
             </div>
         </section>
         <section class="mostrar-mensaje">
             <img src="imagenes/Muñeco.png" alt="Muñeco" class="muñeco">
-            
-            <h3>Ningún mensaje fue encontrado</h3>
-            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            <div class="encontrado">
+                <p>Ningún mensaje fue encontrado</p>
+            </div>
+            <div class="encontrado-dos">
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
             <button>Copiar</button>
         </section>
     </main>

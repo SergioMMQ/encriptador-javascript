@@ -2,13 +2,12 @@ body{
     background: #F3F5FC;
     width: 1440px;
     height: 1020px;
-
+    margin: 40px;
 }
 
 .contenido{
     display: block;
-    text-align: center;
-    margin: 2% auto;
+    margin: 0 auto;
 }
 
 section{
@@ -16,12 +15,15 @@ section{
 }
 
 .logo{
+    text-align: center;
     vertical-align: top;
+    width:  120px;
+    height: 48px;
 }
 
 .escribir-mensaje{
     vertical-align: top;
-    text-align: center;
+    margin-left: 100px;
     width: 50%;
     height: 100%;
 }
@@ -29,14 +31,22 @@ section{
 .texto{
     margin: 165px 0 0 0;
     width: 577px;
-    height: 48px;
+    height: 650px;
+    color: #0A3871;
+    font-size: 32px;
+    background-color: #F3F5FC;
+    border: none;
+    outline: none;
 }
 
-.botones{
-    margin: 620px 0 0 0;
-}
-.excalmacion{
-    display:inline-block;
+.texto::placeholder{
+    color: #0A3871;
+    font-size: 32px;
+  }
+
+
+.exclamacion, .parrafo-exclamacion{
+    display: inline-block;
 }
 .mostrar-mensaje{
     text-align: center;
@@ -44,8 +54,22 @@ section{
     width: 30%;
     height: 944px;
     border-radius: 32px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .1);
 }
 
 .muñeco{
     margin: 300px 0 20px 0;
+}
+
+.encontrado, .encontrado-dos{
+    margin: auto;
+    width: 336px;
+    height: 58px;
+}
+.encontrado p{
+    size: bold;
+    font-size: 24px;
+}
+.encontrado-dos p{
+    font-size: 16px;
 }
