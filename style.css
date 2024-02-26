@@ -44,17 +44,57 @@ section{
     font-size: 32px;
   }
 
+.informacion{
+    vertical-align: top;
+}
 
 .exclamacion, .parrafo-exclamacion{
     display: inline-block;
 }
+
+.exclamacion{
+    width: 16px;
+    height: 16px;
+}
+
+.parrafo-exclamacion{
+    vertical-align: top;
+}
+
+.botones{
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.encriptar, .desencriptar, .copiar{
+    width: 328px;
+    height: 67px;
+    padding: 15px 0;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.encriptar{
+    background: darkblue;
+    color: white;
+}
+
+.desencriptar{
+    background: #F3F5FC;
+    color: darkblue;
+    border: 1px solid #0A3871;
+}
+
 .mostrar-mensaje{
     text-align: center;
     background: #FFFFFF;
-    width: 30%;
+    width: 400px;
     height: 944px;
     border-radius: 32px;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .1);
+    vertical-align: bottom;
 }
 
 .muñeco{
@@ -63,13 +103,21 @@ section{
 
 .encontrado, .encontrado-dos{
     margin: auto;
-    width: 336px;
-    height: 58px;
+    width: 300px;
+    height: 70px;
 }
 .encontrado p{
-    size: bold;
+    font-weight: 700;
     font-size: 24px;
 }
 .encontrado-dos p{
     font-size: 16px;
+}
+
+.copiar{
+    background: white;
+    color: darkblue;
+    border: 1px solid #0A3871;
+    vertical-align: bottom;
+    margin: 75px 0 35px;
 }
