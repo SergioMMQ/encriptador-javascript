@@ -13,28 +13,29 @@
             <img src="imagenes/Vector.png" alt="logo">
         </section>
         <section class="escribir-mensaje">
-            <div >
-                <textarea class="texto" name="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+            <div>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
             </div>
             <div class="informacion">
                 <img class="exclamacion" src="imagenes/bi_exclamation-circle-fill.png" alt="excalamacion" class="excalamacion">
                 <p class="parrafo-exclamacion">Solo letras minúsculas y sin acentos</p>    
             </div>
             <div class="botones">
-                <input type="submit" value="Encriptar" class="encriptar">
-                <input type="reset" value="Desencriptar" class="desencriptar">
+                <input type="submit" value="Encriptar" class="encriptar" onclick="btnEncriptar()">
+                <input type="reset" value="Desencriptar" class="desencriptar" onclick="btnDesencriptar()">
             </div>
         </section>
         <section class="mostrar-mensaje">
-            <img src="imagenes/Muñeco.png" alt="Muñeco" class="muñeco">
+            <textarea class="mensaje" cols="20" rows="16"></textarea>
             <div class="encontrado">
-                <p>Ningún mensaje fue encontrado</p>
+                <p class="texto">Ningún mensaje fue encontrado</p>
             </div>
             <div class="encontrado-dos">
-                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                <p class="textodos">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
-            <input type="button" value="Copiar" class="copiar">
+            <input type="button" value="Copiar" class="copiar" onclick="copiar()">
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
