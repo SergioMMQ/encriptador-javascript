@@ -1,7 +1,8 @@
 const textArea = document.querySelector(".text-area")
 const mensaje = document.querySelector(".mensaje")
-const texto = document.querySelector(".texto")
+const text = document.querySelector(".texto")
 const textodos = document.querySelector(".textodos")
+const copyButton = document.querySelector(".copiar");
 
 //La letra "e" es convertida para "enter"
 //La letra "i" es convertida para "imes"
@@ -14,7 +15,7 @@ function btnEncriptar(){
     mensaje.value = textoEncriptado
     textArea.value = "";
     mensaje.style.backgroundImage = "none"
-    texto.style.color = "white"
+    text.style.color = "white"
     textodos.style.color = "white"
 }
 
@@ -34,7 +35,7 @@ function btnDesencriptar(){
     const textoEncriptado = desencriptar(textArea.value)
     mensaje.value = textoEncriptado
     textArea.value = "";
-    texto.style.color = "white"
+    text.style.color = "white"
     textodos.style.color = "white"
     mensaje.style.backgroundImage = "none"
 }
@@ -50,15 +51,17 @@ function desencriptar(stringDesencriptada){
     return stringDesencriptada
 }
 
-function copiar(){
-    var origen = document.getElementById('.mensaje');
-    copyFrom.textContent = origen.value;
+copyButton.addEventListener("click", () => {
+    const mensajeValue = mensaje.value;
 
-    var body = document.getElementsByTagName('body')[0];
-    body.appendChild(copyFrom);
-    copyFrom.select();
-    document.execCommand('copy');
-    body.removeChild(copyFrom);
-    destino.focus();
-    document.execCommand('paste');
-}
+    const copyText = mensajeValue;
+
+    navigator.clipboard.writeText(copyText)
+        .then(() => {
+            console.log('Texto copiado al portapapeles');
+        })
+        .catch((error) => {
+            console.error('Error al copiar el texto: ', error);
+        });
+
+});

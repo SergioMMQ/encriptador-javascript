@@ -6,17 +6,20 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="logo">
+        <img src="imagenes/Vector.png" alt="logo">
+    </header>
     <main class="contenido">
-        <section class="logo">
-            <img src="imagenes/Vector.png" alt="logo">
-        </section>
         <section class="escribir-mensaje">
             <div>
                 <textarea class="text-area" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
             </div>
-            <div class="informacion">
+            <div>
                 <img class="exclamacion" src="imagenes/bi_exclamation-circle-fill.png" alt="excalamacion" class="excalamacion">
                 <p class="parrafo-exclamacion">Solo letras minúsculas y sin acentos</p>    
             </div>
@@ -33,9 +36,12 @@
             <div class="encontrado-dos">
                 <p class="textodos">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
-            <input type="button" value="Copiar" class="copiar" onclick="copiar()">
+            <input type="button" value="Copiar" class="copiar" onclick="copyToClipboard()">
         </section>
     </main>
+    <footer>
+        <h6>SERGIO MARTINEZ MENESES (28 DE FEBRERO 2024)</h6>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
