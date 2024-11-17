@@ -1,2 +1,2 @@
 # encriptador-javascript
-https://sergiommq.github.io/encriptador-javascript/
+https://sergiommq.github.io/encriptadorjs/
