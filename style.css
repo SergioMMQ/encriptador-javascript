@@ -109,3 +109,35 @@ footer{
     margin: 25px;
     color: #0A3871;
 }
+
+@media screen and (max-width: 1080px) {
+    .logo{
+        display: block;
+    }
+    body{
+    text-align: center;
+    margin:15px 0;
+    }
+    .escribir-mensaje {
+        margin: 0;
+        /* width: 0; */
+    }
+    .text-area{
+        width: 100%;
+        margin: 15px 0 0 0;
+        height: 50%;
+    }
+    .encriptar, .desencriptar{
+        width: 40%;
+    }
+    .mensaje{
+        margin: 0;
+        height: 50%;
+    }
+    .copiar{
+        margin: 35px 0;
+    }
+    .mostrar-mensaje{
+        height: auto;
+    }
+  }
